@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N.O.S.T Facility Signup</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px; }
+        .form-container { max-width: 500px; margin: 0 auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h1 { text-align: center; color: #333; margin-bottom: 20px; }
+        label { display: block; margin: 10px 0 5px; font-weight: bold; color: #555; }
+        input, select { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; }
+        input:focus, select:focus { border-color: #007bff; outline: none; }
+        button { width: 100%; padding: 12px; background: #007bff; color: white; border: none; border-radius: 4px; font-size: 16px; cursor: pointer; margin-top: 20px; }
+        button:hover { background: #0056b3; }
+        .footer { text-align: center; margin-top: 15px; font-size: 12px; color: #888; }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>N.O.S.T Facility Membership Signup</h1>
+        <form action="/submit-signup" method="POST">  <!-- Replace with your endpoint -->
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" value="Chris" required>
+
+            <label for="nationality">Nationality:</label>
+            <select id="nationality" name="nationality" required>
+                <option value="Greek" selected>Greek</option>
+                <option value="Other">Other</option>
+            </select> 
+<label for="country">Country of Residence:</label>
+            <input type="text" id="country" name="country" value="Cyprus" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="chris@example.com" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="+357-XXX-XXXX">
+
+            <label for="membershipType">Membership Type:</label>
+            <select id="membershipType" name="membershipType" required>
+                <option value="">Select Type</option>
+                <option value="Standard">Standard Access</option>
+                <option value="Premium">Premium Access</option>
+                <option value="VIP">VIP Access</option>
+            </select>
+
+            <button type="submit">Submit Signup</button>
+        </form>
+        <div class="footer">By submitting, you agree to N.O.S.T Facility terms. Questions? Contact support@nostfacility.cy</div>
+    </div>
+<a href="https://yourusername.github.io/reponame/">Open N.O.S.T Form</a>
+</body>
+</html>
